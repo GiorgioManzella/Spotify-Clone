@@ -17,46 +17,7 @@
 
 
 
-       .directions {
-        display: flex;
-        flex-direction: row;
-      }
-      .roundButton {
-        border-style: solid;
-        border-color: black;
-        border-radius: 50%;
-        background-color: black;
-      }
-      #dropdownMenuButton {
-        background-color: black;
-        color: aliceblue;
-        font-weight: bolder;
-        border-radius: 30px;
-      }
-      #profileImg {
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-      }
-      nav {
-        background-color: rgb(18, 18, 18);
-      }
-      #navRow {
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
-      }
-      #dropdown {
-          background-color: rgb(18, 18, 18);
-          font-weight: bolder;
-      }
-      #dropdown a {
-          color: aliceblue;
-          font-weight: 500;
-      }
-      #dropdown a:hover {
-          background-color: rgb(61, 60, 60);
-      }
+      
 
       main {
         background-color: rgb(18, 18, 18);
@@ -88,70 +49,7 @@
     <title>Spotify</title>
   </head>
   <body>
-    <nav class="navbar navbar-dark">
-      <div class="container">
-        <div id="navRow" class="row">
-          <div class="directions col-11">
-            <a class="roundButton navbar-brand" href="#">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="40"
-                height="16"
-                fill="currentColor"
-                class="bi bi-chevron-left"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
-                />
-              </svg>
-            </a>
-            <a class="roundButton navbar-brand" href="#">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="40"
-                height="16"
-                fill="currentColor"
-                class="bi bi-chevron-right"
-                viewBox="0 0 16 16"
-              > 
-                <path
-                  fill-rule="evenodd"
-                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
-                />
-              </svg>
-            </a>
-            </div>
-
-            <div class="col-1">
-              <div class="dropdown">
-                <button
-                  class="btn dropdown-toggle"
-                  type="button"
-                  id="dropdownMenuButton"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  <img id="profileImg" src="/images/logo.jpg" alt="" />
-                  Adam
-                </button>
-                <div id="dropdown" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="#">Account</a>
-                  <a class="dropdown-item" href="#">Profile</a>
-                  <a class="dropdown-item" href="#">Upgrade to premium</a>
-                  <a class="dropdown-item" href="#">Private session</a>
-                  <a class="dropdown-item" href="#">Setting</a>
-                  <a class="dropdown-item" href="#">Log out</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
-    
+   
 
 
 <!--MAIN GRID-->

@@ -10,11 +10,8 @@
 
     <!-- Bootstrap CSS -->
     <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
+    rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    
     <style>
       .directions {
         display: flex;
@@ -106,6 +103,25 @@
       }
      
   
+      main {
+        background-color: rgb(18, 18, 18);
+      }
+
+      .first-container .col-2 {
+        background-color: rgb(129, 127, 127);
+        border-radius:3px;
+        
+      }
+
+      .first-container img {
+        width: 60px; 
+        height: 60px;
+        border-radius: 3px;
+      
+        
+
+      }
+
     </style>
     <title>Spotify</title>
   </head>
@@ -256,6 +272,134 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   
+
+
+<!--MAIN GRID-->
+
+
+<main>
+<div class="container first-container text-white">
+  <h1>Good morning</h1>
+  <div class="row mx-n1">
+    <div class="col-2 mx-2 px-0">
+      <img src="./images/Album covers/10cc-How-Dare-You.webp" alt="">
+      <p>Burning Jazz-Rock Fusion</p>
+    </div>
+    <div class="col-2 mx-2 px-0">
+      <img src="./images/Album covers/Beastie-Boys-Pauls-Boutique.webp" alt="">
+      <span>Liked Songs</span>
+    </div>
+    <div class="col-2 mx-2 px-0">
+      <img src="./images/Album covers/Big-Brother-And-the-Holding-Company-Cheap-Thrills-.webp" alt="">
+      <span>Metal Ballads</span>
+    </div>
+    <div class="col-2 mx-2 px-0">
+      <img src="./images/Album covers/Bruce-Springsteen-Born-to-Run.webp" alt="">
+      <span>Post Human: Survival..</span>
+    </div>
+    <div class="col-2 mx-2 px-0">
+      <img src="./images/Album covers/Cream-Disraeli-Gears-.webp" alt="">
+      <span>This is Joe Bonemassa</span>
+    </div>
+  </div>
+
+  <div class="row mx-n1 mt-3">
+    <div class="col-2 mx-2 px-0">
+      <img src="./images/Album covers/10cc-How-Dare-You.webp" alt="">
+      <span>Midian</span>
+    </div>
+    <div class="col-2 mx-2 px-0">
+      <img src="./images/Album covers/Beastie-Boys-Pauls-Boutique.webp" alt="">
+      <span>Nymphetamine</span>
+    </div>
+    <div class="col-2 mx-2 px-0">
+      <img src="./images/Album covers/Big-Brother-And-the-Holding-Company-Cheap-Thrills-.webp" alt="">
+      <span>amo</span>
+    </div>
+    <div class="col-2 mx-2 px-0">
+      <img src="./images/Album covers/Bruce-Springsteen-Born-to-Run.webp" alt="">
+      <span>Le Bask</span>
+    </div>
+    <div class="col-2 mx-2 px-0">
+      <img src="./images/Album covers/Cream-Disraeli-Gears-.webp" alt="">
+      <span>Opeth</span>
+    </div>
+  </div>
+
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-2">
+      <div class="card">
+        <img src="./images/logo.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Some quick example text</p>
+        </div>
+      </div>
+      </div>
+      <div class="col-2">
+        <div class="card">
+          <img src="./images/logo.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text</p>
+          </div>
+        </div>
+        </div>
+        <div class="col-2">
+          <div class="card">
+            <img src="./images/logo.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text </p>
+            </div>
+          </div>
+          </div>
+          <div class="col-2">
+            <div class="card">
+              <img src="./images/logo.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">Some quick example text</p>
+              </div>
+            </div>
+            </div>
+            <div class="col-2">
+              <div class="card">
+                <img src="./images/logo.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text</p>
+                </div>
+              </div>
+              </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -271,5 +415,8 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    
+    
   </body>
 </html>
+

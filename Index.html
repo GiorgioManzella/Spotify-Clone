@@ -17,7 +17,7 @@
       crossorigin="anonymous"
     />
     <style>
-      .directions {
+       .directions {
         display: flex;
         flex-direction: row;
       }
@@ -44,6 +44,18 @@
       #navRow {
         display: flex;
         justify-content: space-around;
+        width: 100%;
+      }
+      #dropdown {
+          background-color: rgb(18, 18, 18);
+          font-weight: bolder;
+      }
+      #dropdown a {
+          color: aliceblue;
+          font-weight: 500;
+      }
+      #dropdown a:hover {
+          background-color: rgb(61, 60, 60);
       }
     </style>
     <title>Spotify</title>
@@ -52,7 +64,7 @@
     <nav class="navbar navbar-dark">
       <div class="container">
         <div id="navRow" class="row">
-          <div class="directions col-2">
+          <div class="directions col-11">
             <a class="roundButton navbar-brand" href="#">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -83,8 +95,9 @@
                 />
               </svg>
             </a>
+            </div>
 
-            <div class="col-3">
+            <div class="col-1">
               <div class="dropdown">
                 <button
                   class="btn dropdown-toggle"
@@ -97,7 +110,7 @@
                   <img id="profileImg" src="/images/logo.jpg" alt="" />
                   Adam
                 </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <div id="dropdown" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                   <a class="dropdown-item" href="#">Account</a>
                   <a class="dropdown-item" href="#">Profile</a>
                   <a class="dropdown-item" href="#">Upgrade to premium</a>
@@ -111,7 +124,6 @@
         </div>
       </div>
     </nav>
-
     
 
 
@@ -189,3 +201,31 @@
     ></script>
   </body>
 </html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <style>
+     
+     
+    </style>
+    <title>Spotify</title>
+  </head>
+  <body>
+    

@@ -31,22 +31,18 @@ body {
       background: linear-gradient(0deg, rgba(18,18,18,1) 32%, rgba(63,7,6,1) 100%);
       font-family: 'Raleway' , sans-serif;
        }
-
-
-
-
-
-
       .directions {
         display: flex;
         flex-direction: row;
+        
       }
       .roundButton {
         border-style: solid;
         border-color: black;
         border-radius: 50%;
         background-color: black;
-        transform: translateY(-3px);
+        transform: translateX(10px);
+        margin-bottom: 10px;
       }
      
       #dropdownMenuButton {
@@ -67,10 +63,14 @@ body {
         display: flex;
         justify-content: space-around;
         width: 100%;
+        transform: translateX(-200px);
+        
       }
       #dropdown {
           background-color: rgb(18, 18, 18);
           font-weight: bolder;
+       
+          
       }
       #dropdown a {
           color: aliceblue;
@@ -78,17 +78,28 @@ body {
       }
       #dropdown a:hover {
           background-color: rgb(61, 60, 60);
-         
+      }
+      #dropdownMenu {
+        transform: translateX(-50px);
+      }
+      .dropdown {
+        margin-top: 5px;
+      }
+      .navbar {
+        width: 100%;
+        transform: translateX(250px);
+        height: 50px;
       }
       .navbar1 {
           display: flex;
           flex-direction: column;
           width: 15%;
-          height: 55em;
+          height: 100vh;
           transform: translateY(-65px);
           background-color: rgb(18, 18, 18);
-          min-width: 237px;
+          min-width: 260px;
           max-width: 270px;
+         
       }
       #verticalMenu{
           display: flex;
@@ -108,11 +119,11 @@ body {
      .plus1, a, span{
         height: 35px;
         width: 35px;
-        transform: translateY(10px);
         margin-right: 15px;
         color: rgb(169, 170, 170);
         font-weight: bold;
-        margin-top: 10px;
+        position: relative;
+        
      }
      a, svg {
          margin-top: 10px;
@@ -123,12 +134,21 @@ body {
           
       }
       .bi{
-          transform: translateX(-5px);
+       transform: translateY(-13px);
+       margin-left: -5px;
       }
 
+     #firstIcon{
+       transform: translateY(-10px); scale: 85%;
+     }
+     #secondIcon {
+       transform: translateY(-7px); scale: 80%;
+     }
+     #thirdIcon {
+      transform: translateY(-7px);
+     }
 
-
-
+    
 
 
 
@@ -142,7 +162,8 @@ body {
       margin-bottom: 30px;
       position: absolute;
       top: 73px;
-      left: 250px;
+      left: 300px;
+      
     
       }
 
@@ -239,16 +260,31 @@ body {
       }
 
       
+      .container1 {
+        position: absolute;
+        transform: translateX(40px);
+        width: 65%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between
+      }
+      .row1{
+        width: 150vh;
+        max-width: 1246px;
+        display: flex;
+        justify-content: space-between;
 
+      }
 
     </style>
     <title>Spotify</title>
   </head>
-  <body>
+  <body>             <!--                             "Now Playing" NavBar                             -->
     <nav class="navbar navbar-dark">
-      <div class="container">
-        <div id="navRow" class="row">
-          <div class="directions col-11">
+      <div class="container1" >
+        <div class="row1  row">
+        <div class="col-10">
             <a class="roundButton navbar-brand" href="#">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -279,9 +315,9 @@ body {
                 />
               </svg>
             </a>
-            </div>
-
-            <div class="col-1">
+            
+          </div>
+            <div id="dropdownMenu" class="col-2">
               <div class="dropdown">
                 <button
                   class="btn dropdown-toggle"
@@ -305,10 +341,12 @@ body {
               </div>
             </div>
           </div>
-        </div>
-      </div>
+
+          </div>
+
+
     </nav>
-    
+     <!--                             "Now Playing" Sidebar                              -->
     <nav class="navbar1 navbar-expand-lg navbar-dark ">
        <img class="mt-4 ml-4 mr-5" src="/images/Spotify_Logo_RGB_White.png" alt="">
       
@@ -319,7 +357,7 @@ body {
          <div class="row">
            <div class="inline col-12"> 
 
-         <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="plus1 bi bi-house-door" viewBox="0 0 16 16">
+         <a href=""><svg id="firstIcon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="plus1 bi bi-house-door" viewBox="0 0 16 16">
             <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
           </svg>
             <span>Home</span> 
@@ -327,7 +365,7 @@ body {
          </div>
 
          <div class="inline col-12">
-            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="plus1 bi bi-search" viewBox="0 0 16 16">
+            <a href=""><svg id="secondIcon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="plus1 bi bi-search" viewBox="0 0 16 16">
                 <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
               </svg>
             <span>Search</span>
@@ -335,7 +373,7 @@ body {
          </div>
 
          <div class="col-12">  
-            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="plus1 bi-list" viewBox="0 0 16 16">
+            <a href=""><svg id="thirdIcon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="plus1 bi-list" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
               </svg>
             <span>Your Library</span>
@@ -486,6 +524,9 @@ body {
 
 <main>
 <div class="container first-container text-white">
+
+
+
   <h1>Good morning</h1>
   <div class="row mt-1">
     <div class="col-2 mx-2">

@@ -17,9 +17,10 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;800;300&display=swap" rel="stylesheet">
 
 
 
@@ -28,8 +29,9 @@
 
 body {
       background: rgb(18,18,18);
-      background: linear-gradient(0deg, rgba(18,18,18,1) 32%, rgba(63,7,6,1) 100%);
       font-family: 'Raleway' , sans-serif;
+      height: 4000px;
+      color: white;
        }
       .directions {
         display: flex;
@@ -84,6 +86,7 @@ body {
       }
       .dropdown {
         margin-top: 5px;
+        transform: translateX(289px);
       }
       .navbar {
         width: 100%;
@@ -94,11 +97,13 @@ body {
           display: flex;
           flex-direction: column;
           width: 15%;
-          height: 100vh;
+          height: 4000px;
           transform: translateY(-65px);
           background-color: rgb(18, 18, 18);
           min-width: 260px;
           max-width: 270px;
+          position: absolute;
+          top: 50px;
          
       }
       #verticalMenu{
@@ -148,11 +153,66 @@ body {
       transform: translateY(-7px);
      }
 
+.top-wrapper {
+    background: rgb(167,59,135);
+background: linear-gradient(180deg, rgba(167,59,135,1) 0%, rgba(87,30,71,1) 100%);
+height: 400px;
+width: auto;
+}
     
+.queen-wrapper .row {
+    display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width:100%;
+  margin-left:315px;
+  margin-right: 0px;
+  margin-top: 30px;
+}
+
+.queen-wrapper .column {
+    display: flex;
+  flex-direction: row;
+  flex-basis: 100%;
+  flex: 1;
+  column-gap: 20px;
+
+}
+
+.queen-column img{
+    height:auto;
+  width: 280px; 
+box-shadow: 0px 12px 18px -9px rgba(0, 0, 0, 0.82);
+border-radius: 6px;
+
+}
+
+.title-column {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.title-column div h1 {
+    font-weight: 800;
+}
+
+.nested-row img{
+    max-width: 40px; 
+    height:40px; 
+    border-radius: 50%;
+    object-fit: cover;
+}
 
 
-/*FOOTER*/
-
+.nested-row span {
+    font-weight:300;
+    color:rgba(255, 255, 255, 0.7)
+}
+.nested-row span strong{
+    color:white;
+    font-weight: 600;
+}
 
  h1 {font-size: 36px}
 
@@ -171,10 +231,6 @@ body {
       }
 
 
-
-
-
-
       .volume-progress {
       width: 100px;
       }
@@ -191,7 +247,7 @@ body {
       }
       .row1{
         width: 150vh;
-        max-width: 1246px;
+        max-width: 1060px;
         display: flex;
         justify-content: space-between;
 
@@ -201,6 +257,10 @@ body {
     <title>Spotify</title>
   </head>
   <body>             <!--                             "Now Playing" NavBar                             -->
+
+
+
+<div class="top-wrapper">
     <nav class="navbar navbar-dark">
       <div class="container1" >
         <div class="row1  row">
@@ -266,6 +326,36 @@ body {
 
 
     </nav>
+
+    <div class="queen-wrapper">
+        <div class="row">
+            <div class="column">
+                <div class="queen-column">
+                <img src="../images/Album covers/bohemian-rapsody.png" alt="">
+                </div>
+                <div class="title-column">
+                    <div>
+                    <h6>ALBUM</h6>
+                    <h1>Bohemian Rhapsody (The Original Soundtrack)</h1>
+                </div>
+                    <div class="nested-row">
+                            <img src="../images/Album covers/queen.jfif" alt="">
+                            <span><strong>Queen</strong> · 2018 · 22 songs, 1hr 19 min</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
      <!--                             "Now Playing" Sidebar                              -->
     <nav class="navbar1 navbar-expand-lg navbar-dark ">
        <img class="mt-4 ml-4 mr-5" src="/images/Spotify_Logo_RGB_White.png" alt="">

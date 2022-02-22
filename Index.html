@@ -152,10 +152,7 @@ body {
 
 
 
-
-
-      
-    
+/*MAIN-GRID*/
       main {
  
       margin-bottom:30px;
@@ -163,80 +160,91 @@ body {
       position: absolute;
       top: 73px;
       left: 300px;
-      
+      background-color: transparent;
     
       }
 
-      
-      .first-container .col-2 {
-        /*background: rgb(24,24,24);
-        background: linear-gradient(0deg, rgba(24,24,24,1) 0%, rgba(27,2,2,1) 100%);
-        border-radius:3px;*/
-        /* From https://css.glass */
-         background: rgba(58, 38, 39, 0.73);
-        border-radius: 3px;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(5.2px);
-        -webkit-backdrop-filter: blur(5.2px);
-        
-      }
-
-      .first-container .row{
-        justify-content: space-around;
-
-      }
-      .first-container img {
-        width: 60px; 
-        height: 60px;
-        border-radius: 3px;
-      
-      }
-
-      .first-container .row .col-2 {
-        padding-left: 0;
-        padding-right: 0;
-      }
+ /*SECOND AND THIRD ROW*/
 
 
-      .second-container .card{
-       /* background: rgb(24,24,24);
-        background: linear-gradient(0deg, rgba(24,24,24,1) 0%, rgba(27,2,2,1) 100%);
-        width: auto;*/
 
-        /* From https://css.glass */
-        background: transparent;
-        border:none;
-      }
+.titles {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom:0px;
+  margin-top: 60px;
+}
+
+.titles h3 {
+  margin-left:27px;
+  color:white;
+  margin-bottom:0px;
+}
+
+.titles h5 {
+  margin-right:27px;
+  color:rgba(255, 255, 255, 0.671);
+  margin-bottom:0px;
+  align-self: flex-end;
+}
 
 
-    
- 
 
- .second-container .row {
-   justify-content: space-around;
- }
 
- .second-container .col-2 {
-  background: rgba(30, 30, 30, 0.63);
-  border-radius: 7px !important;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5.2px);
-  -webkit-backdrop-filter: blur(5.2px);
-   padding-top: 10px;
-   padding-bottom:0px;
-   padding-left: 0px;
-   padding-right:0px;
-   border-radius: 3px;
- }
+.titles + p {
+margin-left: 27px;
+color:rgba(255, 255, 255, 0.671)
+}
 
- .second-container .card-body {
-   padding-left:0;
- }
+
+ .some-page-wrapper {
+  margin: 20px;
+  background-color: transparent;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
   
- .second-container .card img {
-  -webkit-box-shadow: 0px 0px 16px 2px #0f0f0f; 
-  box-shadow: 0px 0px 16px 2px #0f0f0f;
- }
+  background: rgba(30, 30, 30, 0.63);
+      border-radius: 7px !important;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(5.2px);
+      -webkit-backdrop-filter: blur(5.2px);
+  padding: 10px 15px;
+  margin:0px 7px;
+}
+
+.blue-column {
+  background-color: transparent;
+  height: 200px;
+  width:100%;
+}
+
+.blue-column img {
+  height: 135px;
+   width: 100%; 
+   object-fit: cover; 
+box-shadow: 0px 12px 18px -9px rgba(0, 0, 0, 0.82);
+border-radius: 3px;
+}
+
+.blue-column p {
+  margin-top: 25px;
+  font-weight: 700 ;
+  color:white;
+}
 
 
  h1 {font-size: 36px}
@@ -254,6 +262,11 @@ body {
       div.progress {
       height: 3px;
       }
+
+
+
+
+
 
       .volume-progress {
       width: 100px;
@@ -498,202 +511,135 @@ body {
     </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-   
-
-
-
-<!--MAIN GRID-->
+<!--                             "Now Playing" MAIN GRID                              -->
 
 
 <main>
-<div class="container first-container text-white">
-
-
-
-  <h1>Good morning</h1>
-  <div class="row mt-1">
-    <div class="col-2 mx-2">
-      <img src="./images/Album covers/10cc-How-Dare-You.webp" alt="">
-      <span>Midian</span>
-    </div>
-    <div class="col-2 mx-2 ">
-      <img src="./images/Album covers/liked-songs.png" alt="">
-      <span>Liked songs</span>
-    </div>
-    <div class="col-2 mx-2 ">
-      <img src="./images/Album covers/Big-Brother-And-the-Holding-Company-Cheap-Thrills-.webp" alt="">
-      <span>amo</span>
-    </div>
-    <div class="col-2 mx-2 ">
-      <img src="./images/Album covers/Bruce-Springsteen-Born-to-Run.webp" alt="">
-      <span>Le Bask</span>
-    </div>
-    <div class="col-2 mx-2 ">
-      <img src="./images/Album covers/Cream-Disraeli-Gears-.webp" alt="">
-      <span>Opeth</span>
-    </div>
-  </div>
-
-
-  <div class="row mt-3">
-    <div class="col-2 mx-2">
-      <img src="./images/Album covers/Herb-Alpert-the-Tijuana-Brass-Whipped-Cream-and-Other-Delights.webp" alt="">
-      <span>Herb</span>
-    </div>
-    <div class="col-2 mx-2 ">
-      <img src="./images/Album covers/Kate-Bush-The-Kick-Inside.webp" alt="">
-      <span>Kate Bush</span>
-    </div>
-    <div class="col-2 mx-2 ">
-      <img src="./images/Album covers/Pixies-Surfer-Rosa_V2.webp" alt="">
-      <span>Pixies</span>
-    </div>
-    <div class="col-2 mx-2 ">
-      <img src="./images/Album covers/Beastie-Boys-Pauls-Boutique.webp" alt="">
-      <span>Bestie Boys</span>
-    </div>
-    <div class="col-2 mx-2 ">
-      <img src="./images/Album covers/Jethro-Tull-Thick-as-a-Brick-.webp" alt="">
-      <span>Jethro Tull</span>
-    </div>
-  </div>
-
+<!--FABIAN PUT GOOD MORNING CONTAINER HERE AND THEN DELETE THIS COMMENT-->
+<!--SECOND ROW-->
+<div class="titles">
+  <h3>Recently played</h3>
+  <h5>SEE ALL</h5>
 </div>
 
-
-
-
-<div class="container second-container text-white mt-5 ">
- 
-  <div class="container">
-    <div class="row justify-content-between">
-      
-    <h3>Recently played</h3>
-      <h6 class="text-muted"><strong>SEE ALL</strong></h6>
+<div class='some-page-wrapper'>
+  <div class='row'>
+    <div class='column'>
+      <div class='blue-column'>
+        <img src="./images/Album covers/10cc-How-Dare-You.webp" alt="...">
+        <p>10cc</p>
+      </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-2 mx-2">
-      <div class="card mx-3">
-        <img src="./images/Album covers/David-Bowie-Heroes.webp" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">David Bowie</p>
-        </div>
+    <div class='column'>
+      <div class='blue-column'>
+        <img src="./images/Album covers/Beastie-Boys-Pauls-Boutique.webp" alt="">
+        <p>Beastie Boys</p>
       </div>
+    </div>
+    <div class='column'>
+      <div class='blue-column'>
+        <img src="./images/Album covers/Big-Brother-And-the-Holding-Company-Cheap-Thrills-.webp" alt="...">
+        <p>Big Brother</p>
       </div>
-      <div class="col-2 mx-2" >
-        <div class="card mx-3">
-          <img src="./images/Album covers/Uriah-Heep-The-Magician’s-Birthday-.webp" class="card-img-top" alt="...">
-          <div class="card-body">
-            <p class="card-text">Ubriah</p>
-          </div>
-        </div>
-        </div>
-        <div class="col-2 mx-2">
-          <div class="card mx-3">
-            <img src="./images/Album covers/Elvis-Presley-Album.webp" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Elvis Presley</p>
-            </div>
-          </div>
-          </div>
-          <div class="col-2 mx-2">
-            <div class="card mx-3">
-              <img src="./images/Album covers/liked-songs.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text">Liked Songs</p>
-              </div>
-            </div>
-          </div>
-              <div class="col-2 mx-2">
-                <div class="card mx-3">
-                  <img src="./images/Album covers/Janelle-Monáe-Dirty-Computer-.webp" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <p class="card-text">Janelle Monae</p>
-                  </div>
-                </div>
-                </div>
-                
-              
-                  
+    </div>
+    <div class='column'>
+      <div class='blue-column'>
+        <img src="./images/Album covers/Cream-Disraeli-Gears-.webp" alt="">
+        <p>Cream Disraeli</p>
+      </div>
+    </div>
+    <div class='column'>
+      <div class='blue-column'>
+        <img src="./images/Album covers/David-Bowie-Heroes.webp" alt="...">
+        <p>David Bowie</p>
+      </div>
+    </div>
+    <div class='column'>
+      <div class='blue-column'>
+        <img src="./images/Album covers/Jethro-Tull-Thick-as-a-Brick-.webp" alt="">
+        <p>Jethro Tull</p>
+      </div>
+    </div>
+    <div class='column'>
+      <div class='blue-column'>
+        <img src="./images/Album covers/John-Coltrane-Blue-Train.webp" alt="">
+        <p>John Coltrane</p>
+      </div>
+    </div>
+    <div class='column'>
+      <div class='blue-column'>
+        <img src="./images/Album covers/Kate-Bush-The-Kick-Inside.webp" alt="...">
+        <p>Kate Bush</p>
+      </div>
+    </div>
   </div>
 </div>
 
+<!--THIRD ROW-->
 
 
-<div class="container second-container text-white mt-5">
-  
-  <div class="container">
-    <div class="row justify-content-between">
-      
-    <h3>Shows to try</h3>
-      <h6 class="text-muted"><strong>SEE ALL</strong></h6>
+<div class="titles">
+  <h3>Shows to try</h3>
+  <h5>SEE ALL</h5>
+</div>
+  <p>Podcasts we think you'll get hooked on</p>
+
+
+
+
+<div class='some-page-wrapper'>
+  <div class='row'>
+    <div class='column'>
+      <div class='blue-column'>
+        <img src="./images/Album covers/Uriah-Heep-The-Magician’s-Birthday-.webp" alt="...">
+        <p>Uriah</p>
+      </div>
+    </div>
+    <div class='column'>
+      <div class='blue-column'>
+        <img src="./images/Album covers/Kendrick-Lamar-To-Pimp-a-Butterfly.webp" alt="">
+        <p>Kendric Lamar</p>
+      </div>
+    </div>
+    <div class='column'>
+      <div class='blue-column'>
+        <img src="./images/Album covers/Nirvana-Nevermind.webp" alt="...">
+        <p>Nirvana</p>
+      </div>
+    </div>
+    <div class='column'>
+      <div class='blue-column'>
+        <img src="./images/Album covers/Patti-Smith-Horses.webp" alt="">
+        <p>Patti Smith</p>
+      </div>
+    </div>
+    <div class='column'>
+      <div class='blue-column'>
+        <img src="./images/Album covers/Ramones-Self-Titled-Album.webp" alt="...">
+        <p>Ramones</p>
+      </div>
+    </div>
+    <div class='column'>
+      <div class='blue-column'>
+        <img src="./images/Album covers/The-Beatles-Sgt-Pepper’s-Lonely-Hearts-Club-Band.webp" alt="">
+        <p>The Beatles</p>
+      </div>
+    </div>
+    <div class='column'>
+      <div class='blue-column'>
+        <img src="./images/Album covers/XTC-Go-2-cover.webp" alt="">
+        <p>XTC</p>
+      </div>
+    </div>
+    <div class='column'>
+      <div class='blue-column'>
+        <img src="./images/Album covers/Talking-Heads-Little-Creatures-.webp" alt="...">
+        <p>Talking Heads</p>
+      </div>
     </div>
   </div>
-  <p class="text-muted">Podcasts we think you'll get hooked on</p>
-  <div class="row">
-    <div class="col-2 mx-2">
-      <div class="card mx-3">
-        <img src="./images/Album covers/Kendrick-Lamar-To-Pimp-a-Butterfly.webp" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Kendric Lamar</p>
-        </div>
-      </div>
-      </div>
-      <div class="col-2 mx-2" >
-        <div class="card mx-3">
-          <img src="./images/Album covers/Miles-Davis-Bitches-Brew.webp" class="card-img-top" alt="...">
-          <div class="card-body">
-            <p class="card-text">Miles Davis</p>
-          </div>
-        </div>
-        </div>
-        <div class="col-2 mx-2">
-          <div class="card mx-3">
-            <img src="./images/Album covers/Beastie-Boys-Pauls-Boutique.webp" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Beastie Boys</p>
-            </div>
-          </div>
-          </div>
-          <div class="col-2 mx-2">
-            <div class="card mx-3">
-              <img src="./images/Album covers/The-Clash-London-Calling.webp" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text">The Clash</p>
-              </div>
-            </div>
-          </div>
-              <div class="col-2 mx-2">
-                <div class="card mx-3">
-                  <img src="./images/Album covers/Nirvana-Nevermind.webp" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <p class="card-text">Nirvana</p>
-                  </div>
-                </div>
-                </div>
-                
-              
-                  
-  </div>
 </div>
+
 
 
 

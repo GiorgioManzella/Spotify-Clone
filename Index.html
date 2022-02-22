@@ -41,7 +41,8 @@ body {
         border-color: black;
         border-radius: 50%;
         background-color: black;
-        transform: translateY(-3px);
+        transform: translateX(10px);
+        margin-bottom: 10px;
       }
      
       #dropdownMenuButton {
@@ -68,6 +69,7 @@ body {
       #dropdown {
           background-color: rgb(18, 18, 18);
           font-weight: bolder;
+          
       }
       #dropdown a {
           color: aliceblue;
@@ -77,11 +79,12 @@ body {
           background-color: rgb(61, 60, 60);
       }
       #dropdownMenu {
-        transform: translateX(-75px);
+        transform: translateX(-50px);
       }
       .navbar {
         width: 100%;
         transform: translateX(250px);
+        height: 50px;
       }
       .navbar1 {
           display: flex;
@@ -127,7 +130,8 @@ body {
           
       }
       .bi{
-          transform: translateX(3px);
+       transform: translateY(-13px);
+       margin-left: -5px;
       }
 
      #firstIcon{
@@ -252,16 +256,31 @@ body {
       }
 
       
+      .container1 {
+        position: absolute;
+        transform: translateX(40px);
+        width: 65%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between
+      }
+      .row1{
+        width: 130vh;
+        max-width: 1246px;
+        display: flex;
+        justify-content: space-between;
 
+      }
 
     </style>
     <title>Spotify</title>
   </head>
   <body>             <!--                             "Now Playing" NavBar                             -->
     <nav class="navbar navbar-dark">
-      <div class="container">
-        <div id="navRow" class="row">
-          <div class="directions col-auto mr-auto">
+      <div class="container1" >
+        <div class="row1  row">
+        <div class="col-10">
             <a class="roundButton navbar-brand" href="#">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -292,9 +311,9 @@ body {
                 />
               </svg>
             </a>
-            </div>
-
-            <div id="dropdownMenu" class="col-auto">
+            
+          </div>
+            <div id="dropdownMenu" class="col-2">
               <div class="dropdown">
                 <button
                   class="btn dropdown-toggle"
@@ -318,8 +337,10 @@ body {
               </div>
             </div>
           </div>
-        </div>
-      </div>
+
+          </div>
+
+
     </nav>
      <!--                             "Now Playing" Sidebar                              -->
     <nav class="navbar1 navbar-expand-lg navbar-dark ">

@@ -30,7 +30,7 @@ body {
       background: rgb(18,18,18);
       background: linear-gradient(0deg, rgba(18,18,18,1) 32%, rgba(63,7,6,1) 100%);
       font-family: 'Raleway' , sans-serif;
-      height: 4000px;
+      height: 1300px;
        }
       .directions {
         display: flex;
@@ -109,7 +109,7 @@ body {
           display: flex;
           flex-direction: column;
           width: 15%;
-          height: 4000px;
+          height: 1300px;
           transform: translateY(-65px);
           background-color: rgb(18, 18, 18);
           min-width: 260px;
@@ -376,7 +376,7 @@ border-radius: 3px;
       <div class="container1" >
         <div class="row1  row">
         <div class="col-10">
-            <a class="roundButton navbar-brand" href="/login-page/IndexLogin.html">
+            <a class="roundButton navbar-brand" onclick="history.back()" href="">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="40"
@@ -391,7 +391,7 @@ border-radius: 3px;
                 />
               </svg>
             </a>
-            <a class="roundButton1 navbar-brand" href="#">
+            <a class="roundButton1 navbar-brand" onclick="history.go(+1)" href="#">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="40"

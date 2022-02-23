@@ -87,16 +87,19 @@
         text-decoration: none;
         border-radius: 50%;
         background: rgb(255, 255, 255);
-        color: #3b5998;
+        color: #3a62b8;
       }
       .buttons {
         width: 100%;
         border-radius: 50px;
-        border-color: #3b5998;
-        background-color: #3b5998;
+        border-color:  #3a62b8;
+        background-color:  #3a62b8;
         margin: 3px;
         margin-left: 30px;
         height: 40px;
+      }
+      .buttons:hover {
+        background-color: #264381;
       }
       .buttons2 {
         width: 100%;
@@ -107,6 +110,9 @@
         margin-left: 30px;
         height: 40px;
       }
+      .buttons2:hover {
+        background-color: #2e2e2e;
+      }
       .buttons1 {
         width: 100%;
         border-radius: 50px;
@@ -116,7 +122,15 @@
         margin-left: 7px;
         height: 40px;
       }
+      .buttons1:hover {
+        background-color: #e7e6e6;
+      }
       .buttontext {
+        color: #fdfdfd;
+        font-weight: bold;
+        margin: 20px;
+      }
+      .buttontext1 {
         color: #fdfdfd;
         font-weight: bold;
         margin: 20px;
@@ -156,11 +170,22 @@
           display: flex;
           justify-content: center;
       }
-      #logIn:hover {
+      #logInInner{
+          background-color: rgb(71, 184, 80);
+          width: 100%;
+          border-radius: 50px;
+          border-color: rgb(71, 184, 80);
+          height: 40px;
+          display: flex;
+          justify-content: center;
+      }
+      #logInInner:hover {
+        text-decoration: none !important;
+        background-color: rgb(57, 146, 65);
+      }
+      a:hover {
         text-decoration: none;
       }
-      
-
      #exampleCheck1::after:checked{
          background-color: green;
      }
@@ -204,7 +229,7 @@
         </button>
         <button class="buttons2">
           <i id="far" class="fa fa-apple"></i>
-          <span class="buttontext"> CONTINUE WITH APPLE </span>
+          <span class="buttontext1"> CONTINUE WITH APPLE </span>
         </button>
       </div>
 
@@ -244,7 +269,7 @@
             <label id="checkBox" class="form-check-label" for="exampleCheck1"
               >Remember me</label
             >
-           <a id="logIn" href="/Index.html"> <button style="font-weight: bold;" id="logIn" type="button" class="btn btn-primary">LOG IN</button></a>
+           <a id="logIn" href="/Index.html"> <button style="font-weight: bold;" id="logInInner" type="button" class="btn btn-primary">LOG IN</button></a>
           </div>
           
         </form>

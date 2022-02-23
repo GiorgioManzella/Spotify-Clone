@@ -149,10 +149,17 @@
       }
       #logIn{
           background-color: rgb(71, 184, 80);
-          width: 40%;
+          width: 50%;
           border-radius: 50px;
           border-color: rgb(71, 184, 80);
+          height: 40px;
+          display: flex;
+          justify-content: center;
       }
+      #logIn:hover {
+        text-decoration: none;
+      }
+      
 
      #exampleCheck1::after:checked{
          background-color: green;
@@ -237,7 +244,7 @@
             <label id="checkBox" class="form-check-label" for="exampleCheck1"
               >Remember me</label
             >
-            <button style="font-weight: bold;" id="logIn" type="submit" class="btn btn-primary">LOG IN</button>
+           <a id="logIn" href="/Index.html"> <button style="font-weight: bold;" id="logIn" type="button" class="btn btn-primary">LOG IN</button></a>
           </div>
           
         </form>
@@ -288,7 +295,17 @@
 
 
 
+<script type="text/javascript">
 
+let login = function(){
+  let button = document.getElementById('logIn').onclick
+}
+
+
+
+
+
+</script>
 
 
 

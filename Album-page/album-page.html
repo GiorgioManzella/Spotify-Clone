@@ -294,7 +294,9 @@ hr {
 .gradient-background {
     background: rgb(65,24,54);
 background: linear-gradient(180deg, rgba(65,24,54,1) 0%, rgba(18,18,18,1) 63%);
+width: 5000px;
 }
+
 
 /*FOOTER*/
  h1 {font-size: 36px}
@@ -334,6 +336,12 @@ background: linear-gradient(180deg, rgba(65,24,54,1) 0%, rgba(18,18,18,1) 63%);
         display: flex;
         justify-content: space-between;
 
+      }
+      #gradientBottom {
+        width: 1700px;
+      }
+      #topGradient {
+        width: 3000px;
       }
 
     </style>
@@ -415,7 +423,9 @@ background: linear-gradient(180deg, rgba(65,24,54,1) 0%, rgba(18,18,18,1) 63%);
 </div>
 
 <!--SECTION TOP-->
+<div id="topGradient">
 <div class="top-wrapper">
+  
 <div class="queen-wrapper">
     <div class="row">
         <div class="column">
@@ -435,11 +445,15 @@ background: linear-gradient(180deg, rgba(65,24,54,1) 0%, rgba(18,18,18,1) 63%);
             </div>
         </div>
     </div>
+    
+
+</div>
 </div>
 
 
 <!--SECTION BELOW-->
 <div class="gradient-background">
+  <div id="gradientBottom">
 <div class="section-below">
     <div class="row">
         <div class="column-play-button">
@@ -452,6 +466,7 @@ background: linear-gradient(180deg, rgba(65,24,54,1) 0%, rgba(18,18,18,1) 63%);
             <ion-icon name="ellipsis-horizontal-outline" size="large"></ion-icon>
         </div>
     </div>
+  
 </div>
 
 <!--SECTION PLAYLIST-->
@@ -580,7 +595,7 @@ background: linear-gradient(180deg, rgba(65,24,54,1) 0%, rgba(18,18,18,1) 63%);
     </div>
 </div>
 </div>
-
+</div>
 
 
 

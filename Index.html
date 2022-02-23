@@ -174,7 +174,7 @@ body {
       margin-bottom:30px;
       margin-bottom: 30px;
       position: absolute;
-      top: 73px;
+      top: 20px;
       left: 300px;
       background-color: transparent;
     
@@ -237,8 +237,40 @@ margin-left: 6px;
 
 @media (max-width: 1409px) {
   .red-column {height:65px;}
+  .red-column p {margin-left:0px;}
 }
 
+@media only screen and (max-width: 425px) {
+    .morning-wrapper .column {
+       display: block;
+       margin-top:10px;
+       width:100vh;
+       column-count:4;
+
+    }
+
+    .red-column {
+      width:200px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+  .morning-wrapper .column {
+       display: block;
+       margin-top:10px;
+       width:100vh;
+       column-count:2;
+
+    }
+
+    .red-column {
+      width:200px;
+    }
+}
+
+@media only screen and (min-width:769px) and (max-width: 2400px) {
+  .morning-wrapper{width:100vh;}
+}
  /*SECOND AND THIRD ROW*/
 
 

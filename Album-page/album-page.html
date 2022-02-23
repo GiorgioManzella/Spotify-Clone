@@ -28,9 +28,12 @@
     <style>
 
 body {
-      background: rgb(18,18,18);
+    background: rgb(167,59,135);
       font-family: 'Raleway' , sans-serif;
-      height: 4000px;
+      height: 1355px;
+      width:1707px;
+      
+     
       color: white;
        }
       .directions {
@@ -59,7 +62,7 @@ body {
         border-radius: 50%;
       }
       nav {
-        background-color: rgba(18, 18, 18, 0);
+        background: rgb(167,59,135);
       }
       #navRow {
         display: flex;
@@ -97,7 +100,7 @@ body {
           display: flex;
           flex-direction: column;
           width: 15%;
-          height: 4000px;
+          height: 1370px;
           transform: translateY(-65px);
           background-color: rgb(18, 18, 18);
           min-width: 260px;
@@ -153,10 +156,12 @@ body {
       transform: translateY(-7px);
      }
 
+
+     /*TOP SECTION*/
 .top-wrapper {
     background: rgb(167,59,135);
 background: linear-gradient(180deg, rgba(167,59,135,1) 0%, rgba(87,30,71,1) 100%);
-height: 400px;
+height: 340px;
 width: auto;
 }
     
@@ -167,7 +172,7 @@ width: auto;
   width:100%;
   margin-left:315px;
   margin-right: 0px;
-  margin-top: 30px;
+  padding-top: 30px;
 }
 
 .queen-wrapper .column {
@@ -207,13 +212,91 @@ border-radius: 6px;
 
 .nested-row span {
     font-weight:300;
-    color:rgba(255, 255, 255, 0.7)
+    color:rgba(255, 255, 255, 0.7);
 }
 .nested-row span strong{
     color:white;
     font-weight: 600;
 }
 
+/*SECTION 2*/
+
+.section-below .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: 315px;
+    margin-right: 0px;
+    column-gap: 35px;
+    padding-top:30px;
+}
+
+
+
+.section-below .column-play-button img{
+    height:50px;
+}
+
+.section-below .column-heart-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity:0.5;
+}
+
+.section-below .column-ellipsis-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity:0.5;
+}
+
+
+.playlist-wrapper .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 334px;
+    margin-right: 0px;
+    margin-top: 30px;
+    column-gap: 35px;
+}
+
+.column-hash {
+    align-self: center;
+}
+.column-title {
+    flex-grow:1;
+    align-self: center;
+    color:white;
+    
+}
+
+.column-title p {
+    margin-bottom:0;
+}
+
+.column-clock {
+    opacity:0.5;
+}
+
+hr {
+    background-color: rgb(231, 231, 231);
+    opacity:0.5;
+}
+
+.playlist-wrapper span {
+    color:rgba(255, 255, 255, 0.7);
+    margin-right: 0px;
+}
+
+.gradient-background {
+    background: rgb(65,24,54);
+background: linear-gradient(180deg, rgba(65,24,54,1) 0%, rgba(18,18,18,1) 63%);
+}
+
+/*FOOTER*/
  h1 {font-size: 36px}
 
 
@@ -260,7 +343,7 @@ border-radius: 6px;
 
 
 
-<div class="top-wrapper">
+
     <nav class="navbar navbar-dark">
       <div class="container1" >
         <div class="row1  row">
@@ -327,21 +410,26 @@ border-radius: 6px;
 
     </nav>
 
-    <div class="queen-wrapper">
-        <div class="row">
-            <div class="column">
-                <div class="queen-column">
-                <img src="../images/Album covers/bohemian-rapsody.png" alt="">
-                </div>
-                <div class="title-column">
-                    <div>
-                    <h6>ALBUM</h6>
-                    <h1>Bohemian Rhapsody (The Original Soundtrack)</h1>
-                </div>
-                    <div class="nested-row">
-                            <img src="../images/Album covers/queen.jfif" alt="">
-                            <span><strong>Queen</strong> · 2018 · 22 songs, 1hr 19 min</span>
-                        </div>
+
+    </div>
+</div>
+
+<!--SECTION TOP-->
+<div class="top-wrapper">
+<div class="queen-wrapper">
+    <div class="row">
+        <div class="column">
+            <div class="queen-column">
+            <img src="../images/Album covers/bohemian-rapsody.png" alt="">
+            </div>
+            <div class="title-column">
+                <div>
+                <h6>ALBUM</h6>
+                <h1>Bohemian Rhapsody (The Original Soundtrack)</h1>
+            </div>
+                <div class="nested-row">
+                        <img src="../images/Album covers/queen.jfif" alt="">
+                        <span><strong>Queen</strong> · 2018 · 22 songs, 1hr 19 min</span>
                     </div>
                 </div>
             </div>
@@ -350,6 +438,148 @@ border-radius: 6px;
 </div>
 
 
+<!--SECTION BELOW-->
+<div class="gradient-background">
+<div class="section-below">
+    <div class="row">
+        <div class="column-play-button">
+            <img src="../images/Icons/Spotify-Play-Button.png" alt="">
+        </div>
+        <div class="column-heart-icon">
+            <ion-icon name="heart-outline" size="large"></ion-icon>
+        </div>
+        <div class="column-ellipsis-icon">
+            <ion-icon name="ellipsis-horizontal-outline" size="large"></ion-icon>
+        </div>
+    </div>
+</div>
+
+<!--SECTION PLAYLIST-->
+
+
+<div class="playlist-wrapper">
+    <div class="row">
+        <div class="column-hash">
+            <span>#</span>
+        </div>
+        <div class="column-title">
+            <span>TITLE</span>
+        </div>
+        <div class="column-clock">
+            <ion-icon name="time-outline" size="large"></ion-icon>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="column-hash">
+            <span>1</span>
+        </div>
+        <div class="column-title">
+            <p><strong>20th Century Fox Fanfare</strong></p>
+            <span>Queen</span>
+        </div>
+        <div class="column-clock">
+            <span>0:25</span>
+        </div>
+    </div>
+     <div class="row">
+        <div class="column-hash">
+            <span>2</span>
+        </div>
+        <div class="column-title">
+            <p><strong>Somebody to Love</strong></p>
+            <span>Queen</span>
+        </div>
+        <div class="column-clock">
+            <span>4:55</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column-hash">
+            <span>3</span>
+        </div>
+        <div class="column-title">
+            <p><strong>Doing all right - Revisited</strong></p>
+            <span>Queen</span>
+        </div>
+        <div class="column-clock">
+            <span>3:16</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column-hash">
+            <span>4</span>
+        </div>
+        <div class="column-title">
+            <p><strong>Keep Yourself Alive - Live at Rainbow</strong></p>
+            <span>Queen</span>
+        </div>
+        <div class="column-clock">
+            <span>3:56</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column-hash">
+            <span>5</span>
+        </div>
+        <div class="column-title">
+            <p><strong>Killer Queen</strong></p>
+            <span>Queen</span>
+        </div>
+        <div class="column-clock">
+            <span>2:59</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column-hash">
+            <span>6</span>
+        </div>
+        <div class="column-title">
+            <p><strong>Fat Bottomed Girl - Live in Paris</strong></p>
+            <span>Queen</span>
+        </div>
+        <div class="column-clock">
+            <span>4:37</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column-hash">
+            <span>7</span>
+        </div>
+        <div class="column-title">
+            <p><strong>Bohemian Rhapsody</strong></p>
+            <span>Queen</span>
+        </div>
+        <div class="column-clock">
+            <span>5:54</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column-hash">
+            <span>8</span>
+        </div>
+        <div class="column-title">
+            <p><strong>Now I'm Here - Live at Hammersmith Odeon</strong></p>
+            <span>Queen</span>
+        </div>
+        <div class="column-clock">
+            <span>4:25</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column-hash">
+            <span>9</span>
+        </div>
+        <div class="column-title">
+            <p><strong>Crazy Little Thing Called Love</strong></p>
+            <span>Queen</span>
+        </div>
+        <div class="column-clock">
+            <span>2:43</span>
+        </div>
+    </div>
+</div>
+</div>
 
 
 
@@ -533,7 +763,8 @@ border-radius: 6px;
 
 
 
-
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

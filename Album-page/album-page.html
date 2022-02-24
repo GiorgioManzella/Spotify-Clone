@@ -570,7 +570,7 @@ width: 100px;
 <div class="section-below">
     <div class="row">
         <div class="column-play-button wobble-vertical-on-hover">
-            <img src="../images/Icons/Spotify-Play-Button.png" alt="">
+            <img src="../images/Icons/Spotify-Play-Button.png" onclick="changeSong()" alt="">
         </div>
         <div class="column-heart-icon">
             <ion-icon name="heart-outline" size="large"></ion-icon>
@@ -802,11 +802,11 @@ width: 100px;
     <div class="row d-flex">
       <div class="col-lg-3 col-md-4 d-md-block galleryArtist">
         <div class=" d-flex">
-          <img src="../images/Album covers/nowplaying.jpeg" style="width:60px; height:60px" class="align-self-center my-4 mx-3"
-            alt="...">
+          <img src="../images/Album covers/nowplaying.jpeg" style="width:60px; height:60px" 
+          class="align-self-center my-4 mx-3" id="image-footer"  alt="...">
           <div class="text-white d-flex align-items-center w-100 ">
             <div class="d-flex flex-column mt-4">
-              <h6 class="mt-0 titleSong">Another One Bites The Dust - Remastered 2011</h6>
+              <h6 class="mt-0 titleSong" id="title-footer">Another One Bites The Dust - Remastered 2011</h6>
               <p class="artistName text-muted">Queen</p>
             </div>
           </div>
@@ -870,7 +870,13 @@ width: 100px;
 
 
 
+<script>
 
+    function changeSong() {
+
+        let newImg = document.getElementById('image-footer').src="../images/Album covers/bohemian-rapsody.png"
+        let newTitle= document.getElementById('title-footer').innerHTML="Bohemian Rhapsody"    }
+</script>
 
 
 

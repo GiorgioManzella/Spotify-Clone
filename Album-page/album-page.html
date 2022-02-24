@@ -248,6 +248,8 @@ border-radius: 6px;
     height:50px;
 }
 
+
+
 .column-play-button:hover {
     
     transition: all 0.2s ease-in-out;
@@ -323,8 +325,8 @@ border-radius: 6px;
   animation-duration: 1s;
   -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
 }
 
 
@@ -364,6 +366,14 @@ border-radius: 6px;
     align-self: center;
     color:white;
     
+}
+
+.column-title p:hover {
+    margin-top:-2;
+    transition: margin 0.2s ease-in-out;
+    box-shadow: 0px 12px 18px -9px rgba(167,59,135,1);
+    cursor:pointer;
+    width:fit-content;
 }
 
 .column-title p {
@@ -602,8 +612,8 @@ width: 100px;
         <div class="column-hash">
             <span>1</span>
         </div>
-        <div class="column-title">
-            <p><strong>20th Century Fox Fanfare</strong></p>
+        <div class="column-title" onclick="changeSong1()">
+            <p ><strong>20th Century Fox Fanfare</strong></p>
             <span>Queen</span>
         </div>
         <div class="column-clock">
@@ -614,7 +624,7 @@ width: 100px;
         <div class="column-hash">
             <span>2</span>
         </div>
-        <div class="column-title">
+        <div class="column-title" onclick="changeSong2()">
             <p><strong>Somebody to Love</strong></p>
             <span>Queen</span>
         </div>
@@ -626,7 +636,7 @@ width: 100px;
         <div class="column-hash">
             <span>3</span>
         </div>
-        <div class="column-title">
+        <div class="column-title" onclick="changeSong3()">
             <p><strong>Doing all right - Revisited</strong></p>
             <span>Queen</span>
         </div>
@@ -638,7 +648,7 @@ width: 100px;
         <div class="column-hash">
             <span>4</span>
         </div>
-        <div class="column-title">
+        <div class="column-title"onclick="changeSong4()">
             <p><strong>Keep Yourself Alive - Live at Rainbow</strong></p>
             <span>Queen</span>
         </div>
@@ -650,7 +660,7 @@ width: 100px;
         <div class="column-hash">
             <span>5</span>
         </div>
-        <div class="column-title">
+        <div class="column-title" onclick="changeSong5()">
             <p><strong>Killer Queen</strong></p>
             <span>Queen</span>
         </div>
@@ -662,7 +672,7 @@ width: 100px;
         <div class="column-hash">
             <span>6</span>
         </div>
-        <div class="column-title">
+        <div class="column-title"onclick="changeSong6()">
             <p><strong>Fat Bottomed Girl - Live in Paris</strong></p>
             <span>Queen</span>
         </div>
@@ -674,7 +684,7 @@ width: 100px;
         <div class="column-hash">
             <span>7</span>
         </div>
-        <div class="column-title">
+        <div class="column-title"onclick="changeSong()">
             <p><strong>Bohemian Rhapsody</strong></p>
             <span>Queen</span>
         </div>
@@ -686,7 +696,7 @@ width: 100px;
         <div class="column-hash">
             <span>8</span>
         </div>
-        <div class="column-title">
+        <div class="column-title" onclick="changeSong7()">
             <p><strong>Now I'm Here - Live at Hammersmith Odeon</strong></p>
             <span>Queen</span>
         </div>
@@ -698,7 +708,7 @@ width: 100px;
         <div class="column-hash">
             <span>9</span>
         </div>
-        <div class="column-title">
+        <div class="column-title"onclick="changeSong8()">
             <p><strong>Crazy Little Thing Called Love</strong></p>
             <span>Queen</span>
         </div>
@@ -876,7 +886,44 @@ width: 100px;
 
         let newImg = document.getElementById('image-footer').src="../images/Album covers/bohemian-rapsody.png"
         let newTitle= document.getElementById('title-footer').innerHTML="Bohemian Rhapsody"    }
+
+        function changeSong1() {
+            let newImg = document.getElementById('image-footer').src="../images/Album covers/bohemian-rapsody.png"
+        let newTitle= document.getElementById('title-footer').innerHTML="20th Century Fox Fanfare"
+        }
+
+        function changeSong2() {
+            let newImg = document.getElementById('image-footer').src="../images/Album covers/bohemian-rapsody.png"
+        let newTitle= document.getElementById('title-footer').innerHTML="Somebody to love"
+        }
+
+        function changeSong3() {
+            let newImg = document.getElementById('image-footer').src="../images/Album covers/bohemian-rapsody.png"
+        let newTitle= document.getElementById('title-footer').innerHTML="Doing all right- Revisited"
+        }
+
+        function changeSong4() {
+            let newImg = document.getElementById('image-footer').src="../images/Album covers/bohemian-rapsody.png"
+        let newTitle= document.getElementById('title-footer').innerHTML="Keep yourself Alive - Live at Rainbow"
+        }
+        function changeSong5() {
+            let newImg = document.getElementById('image-footer').src="../images/Album covers/bohemian-rapsody.png"
+        let newTitle= document.getElementById('title-footer').innerHTML="Killer Queen"
+        }
+        function changeSong6() {
+            let newImg = document.getElementById('image-footer').src="../images/Album covers/bohemian-rapsody.png"
+        let newTitle= document.getElementById('title-footer').innerHTML="Fat Bottomed Girl-Live in Paris"
+        }
+        function changeSong7() {
+            let newImg = document.getElementById('image-footer').src="../images/Album covers/bohemian-rapsody.png"
+        let newTitle= document.getElementById('title-footer').innerHTML="Now I'm here- Live at Hammersmith Odeon"
+        }
+        function changeSong7() {
+            let newImg = document.getElementById('image-footer').src="../images/Album covers/bohemian-rapsody.png"
+        let newTitle= document.getElementById('title-footer').innerHTML="Crazy Little Thing Called Love"
+        }
 </script>
+
 
 
 

@@ -233,6 +233,11 @@ a:hover {
   width:fit-content;
 }
 
+.Artist:hover {
+  cursor:pointer;
+  box-shadow: 0px 10px 12px -9px rgb(29 185 84);
+  width:fit-content;
+}
 .artist-pick img{
     max-width: 40px; 
     height:40px; 
@@ -638,7 +643,7 @@ width: 100px;
     <div class="section-below">
         <div class="row">
             <div class="column-play-button wobble-vertical-on-hover ">
-                <img src="../images/Icons/Spotify-Play-Button.png" alt="">
+                <img src="../images/Icons/Spotify-Play-Button.png"  alt="">
             </div>
             <div class="column-heart-icon">
 
@@ -675,7 +680,7 @@ width: 100px;
                 <tr style="line-height: 50px;">
                     <td scope="row" class="reception "><a href=""><i class="bi bi-reception-3" style= "color: green; width: 0.25%;"></i></a></td>
                     <td><img src="/images/Album covers/nowplaying.jpeg" style=width:35px; alt=""></td>
-                    <td><div class="artist-green">Another One Bites The Dust - Remastered 2011</div></td>
+                    <td><div class="artist-green" onclick="changeSong()" >Another One Bites The Dust - Remastered 2011</div></td>
                     <td class="views text-muted" >1,013,128,772</td>
                     <td class="time text-muted">3.34</td>
 
@@ -683,28 +688,28 @@ width: 100px;
                 <tr style="line-height: 50px;">
                     <td scope="row" class="artist-number text-muted">2</td>
                     <td><img src="/images/Album covers/bohemian rhapsody remastered.jpeg" style=width:35px;></td>
-                    <td><div class="Artist">Bohemian Rhapsody - Remastered 2011</div></td>
+                    <td><div class="Artist" onclick="changeSong1()">Bohemian Rhapsody - Remastered 2011</div></td>
                     <td class="views text-muted">1,497,986,258</td>
                     <td class="time text-muted">5.54</td>
                 </tr>
                 <tr style="line-height: 50px;">
                     <td scope="row" class="artist-number text-muted">3</td>
                     <td><img src="/images/Album covers/don't stop me remastered.jpeg" alt=""style=width:35px;></td>
-                    <td><div class="Artist">Don't Stop Me Now - Remastered 2011</div></td>
+                    <td><div class="Artist" onclick="changeSong2()">Don't Stop Me Now - Remastered 2011</div></td>
                     <td class="views text-muted">1,063,959,983</td>
                     <td class="time text-muted">3.29</td>
                 </tr>
                 <tr style="line-height: 50px;">
                     <td scope="row" class="artist-number text-muted">4</td>
                     <td><img src="/images/Album covers/under pressure remastered.jpeg" alt=""style=width:35px;></td>
-                    <td><div class="Artist">Under Pressure - Remastered 2011</div></td>
+                    <td><div  class="Artist" onclick="changeSong3()">Under Pressure - Remastered 2011</div></td>
                     <td class="views text-muted">900,225,096</td>
                     <td class="time text-muted">4.08</td>
                 </tr>
                 <tr style="line-height: 50px;">
                     <td scope="row" class="artist-number text-muted">5</td>
                     <td><img src="/images/Album covers/we will rock you remastered.jpeg" alt=""style=width:35px;></td>
-                    <td><div class="Artist">We Will Rock You - Remastered </div></td>
+                    <td><div  class="Artist" onclick="changeSong4()">We Will Rock You - Remastered </div></td>
                     <td class="views text-muted">705,225,721</td>
                     <td class="time text-muted">2.02</td>
                 </tr>
@@ -850,11 +855,11 @@ width: 100px;
     <div class="row d-flex">
       <div class="col-lg-3 col-md-4 d-md-block galleryArtist">
         <div class=" d-flex">
-          <img src="../images/Album covers/nowplaying.jpeg" style="width:60px; height:60px" class="align-self-center my-4 mx-3"
-            alt="...">
+          <img src="../images/Album covers/nowplaying.jpeg" style="width:60px; height:60px" 
+          class="align-self-center my-4 mx-3" id="image-footer"alt="...">
           <div class="text-white d-flex align-items-center w-100 ">
             <div class="d-flex flex-column mt-4">
-              <h6 class="mt-0 titleSong">Another One Bites The Dust - Remastered 2011</h6>
+              <h6 id="title-footer" class="mt-0 titleSong" >Another One Bites The Dust - Remastered 2011</h6>
               <p class="artistName text-muted">Queen</p>
             </div>
           </div>
@@ -916,7 +921,36 @@ width: 100px;
 
 
 
+<script>
 
+
+function changeSong() {
+  let newImg = document.getElementById('image-footer').src="../images/Album covers/nowplaying.jpeg"
+            let newTitle= document.getElementById('title-footer').innerHTML="Another One Bites the Dust - Remastered 2011"
+            }
+    
+
+    function changeSong1() {
+            let newImg = document.getElementById('image-footer').src="../images/Album covers/bohemian rhapsody remastered.jpeg"
+        let newTitle= document.getElementById('title-footer').innerHTML="Bohemian Rhapsody - Remastered 2011"
+        }
+
+        function changeSong2() {
+          let newImg = document.getElementById('image-footer').src="../images/Album covers/don't stop me remastered.jpeg"
+        let newTitle= document.getElementById('title-footer').innerHTML="Don't stop me now - Remastered 2011"
+        }
+
+        function changeSong3() {
+          let newImg = document.getElementById('image-footer').src="../images/Album covers/under pressure remastered.jpeg"
+        let newTitle= document.getElementById('title-footer').innerHTML="Under pressure - Remastered 2011"
+        }
+
+        function changeSong4() {
+          let newImg = document.getElementById('image-footer').src="../images/Album covers/we will rock you remastered.jpeg"    
+        let newTitle= document.getElementById('title-footer').innerHTML="We Will Rock You - Remastered"
+        }
+      
+</script>
 
 
 

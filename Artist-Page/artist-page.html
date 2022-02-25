@@ -25,156 +25,174 @@
 
 
 
-    <style>
+<style>
 
 body {
     background: rgba(0,2,3,1);
-      font-family: 'Raleway' , sans-serif;
-      height: 1355px;
-      width:1707px;
+    font-family: 'Raleway' , sans-serif;
+    height: 1355px;
+    width:1400px;
+    color: white;
+    overflow-x: hidden;
+   }
+
+.directions {
+  display: flex;
+  flex-direction: row;
+  
+   }
+   
+.roundButton {
+  border-style: solid;
+  border-color: black;
+  border-radius: 50%;
+  background-color: black;
+  transform: translateX(10px);
+  margin-bottom: 10px;
+    }
+
+.roundButton1 {
+  border-style: solid;
+  border-color: black;
+  border-radius: 50%;
+  background-color: black;
+  transform: translateX(10px);
+  margin-bottom: 10px;
+    opacity: 0.5;
+  }
+ 
+#dropdownMenuButton {
+    background-color: black;
+    color: aliceblue;
+    font-weight: bolder;
+    border-radius: 30px;
+  }
+
+#profileImg {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+
+nav {
+    background: transparent;
+  }
+
+#navRow {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    transform: translateX(-200px);
+    
+  }
+
+#dropdown {
+    background-color: rgb(18, 18, 18);
+    font-weight: bolder;
+        
+  }
+
+#dropdown a {
+    color: aliceblue;
+    font-weight: 500;
+  }
+
+#dropdown a:hover {
+    background-color: rgb(61, 60, 60);
+  }
+#dropdownMenu {
+    transform: translateX(-50px);
+  }
+.dropdown {
+    margin-top: 5px;
+    transform: translateX(289px);
+  }
+.navbar {
+    width: 100%;
+    transform: translateX(250px);
+    height: 50px;
+  }
+
+.navbar1 {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    height: 1370px;
+    transform: translateY(-65px);
+    background-color: rgb(18, 18, 18);
+    min-width: 260px;
+    max-width: 270px;
+    position: absolute;
+    top: 50px;
+     
+  }
+
+#verticalMenu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
       
-     
-      color: white;
-       }
-      .directions {
-        display: flex;
-        flex-direction: row;
-        
-      }
-      .roundButton {
-        border-style: solid;
-        border-color: black;
-        border-radius: 50%;
-        background-color: black;
-        transform: translateX(10px);
-        margin-bottom: 10px;
-      }
-      .roundButton1 {
-        border-style: solid;
-        border-color: black;
-        border-radius: 50%;
-        background-color: black;
-        transform: translateX(10px);
-        margin-bottom: 10px;
-        opacity: 0.5;
-      }
-     
-      #dropdownMenuButton {
-        background-color: black;
-        color: aliceblue;
-        font-weight: bolder;
-        border-radius: 30px;
-      }
-      #profileImg {
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-      }
-      nav {
-        background: transparent;
-      }
-      #navRow {
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
-        transform: translateX(-200px);
-        
-      }
-      #dropdown {
-          background-color: rgb(18, 18, 18);
-          font-weight: bolder;
-       
-          
-      }
-      #dropdown a {
-          color: aliceblue;
-          font-weight: 500;
-      }
-      #dropdown a:hover {
-          background-color: rgb(61, 60, 60);
-      }
-      #dropdownMenu {
-        transform: translateX(-50px);
-      }
-      .dropdown {
-        margin-top: 5px;
-        transform: translateX(289px);
-      }
-      .navbar {
-        width: 100%;
-        transform: translateX(250px);
-        height: 50px;
-      }
-      .navbar1 {
-          display: flex;
-          flex-direction: column;
-          width: 15%;
-          height: 1370px;
-          transform: translateY(-65px);
-          background-color: rgb(18, 18, 18);
-          min-width: 260px;
-          max-width: 270px;
-          position: absolute;
-          top: 50px;
-         
-      }
-      #verticalMenu{
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-          
-      }
-     .inline {
-         display: inline;
-     }
-    .plus{
-        height: 30px;
-        width: 30px;
-        margin-right: 16px;
-        margin-left: 3px;
-     }
-     .plus1, a, span{
-        height: 35px;
-        width: 35px;
-        margin-right: 15px;
-        color: rgb(169, 170, 170);
-        font-weight: bold;
-        position: relative;
-        
-     }
-     a, svg {
-         margin-top: 10px;
-     }
-      a:hover {
-          color: rgb(208, 211, 211);
-          text-decoration: none;
-          
-      }
-      .bi{
-       transform: translateY(-13px);
-       margin-left: -5px;
+  }
+
+.inline {
+    display: inline;
+  }
+
+.plus {
+    height: 30px;
+    width: 30px;
+    margin-right: 16px;
+    margin-left: 3px;
+  }
+
+.plus1, a, span{
+    height: 35px;
+    width: 35px;
+    margin-right: 15px;
+    color: rgb(169, 170, 170);
+    font-weight: bold;
+    position: relative;   
+  }
+
+a, svg {
+    margin-top: 10px;
+    }
+
+a:hover {
+    color: rgb(208, 211, 211);
+    text-decoration: none;    
       }
 
-     #firstIcon{
-       transform: translateY(-10px); scale: 85%;
+.bi{
+    transform: translateY(-13px);
+    margin-left: -5px;
+      }
+
+#firstIcon{
+    transform: translateY(-10px); scale: 85%;
      }
-     #secondIcon {
-       transform: translateY(-7px); scale: 80%;
+
+#secondIcon {
+    transform: translateY(-7px); scale: 80%;
      }
-     #thirdIcon {
-      transform: translateY(-7px);
-      margin-left: -5px;
+
+#thirdIcon {
+    transform: translateY(-7px);
+    margin-left: -5px;
      }
 
 
      /*TOP SECTION*/
 .top-wrapper {
     background-image: url("/images/queen3.jpeg");
-    background-size: cover;
-    background-position: top;
-    height: 50%;
+    background-size: 1900px;
+    height: 100%;
+    width: 1000px;
     height: 340px;
     width: auto;
+    
+    
+    
 }
 
 .follow-button {
@@ -586,7 +604,7 @@ width: 100px;
     <div class="queen-wrapper">
         <div class="row">
             <div class="column">
-                <div class='text-white position-absolute' style="margin-left: -15px; margin-top: 200px; top:-50px">
+                <div class='text-white position-absolute' style="margin-left: -15px; margin-top: 200px; top:-50px; opacity: 1.8;">
                             <!-- verified  -->
                     <div class='d-flex align-items-center'>
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-patch-check-fill text-info mt-0" viewBox="0 0 16 16">
